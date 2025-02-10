@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            font-size: 20px;
+        }
+        table tr td{
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+        fieldset{
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            background-color: khaki;
+        }
+        /* td{
+            background-color: firebrick;
+        } */
+    </style>
+    <div id="header"><h1>Registration</h1></div>
+    <div id="content">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Registration</title>
+    </div>
+</head>
+<script defer src="register.js"></script>
+<div id="container">
+<body>
+    <!-- <center> -->
+        <form name="frm" method="post" action="login.html" onsubmit="return validate()">
+            <fieldset align="center">
+                <table align="center">
+                    <tr><td>First Name:</td><td><input type="text" name="fname" value="" size="50" required></td></tr>
+                    <tr><td>Last Name:</td><td><input type="text" name="lname" value="" size="50" required></td></tr>
+                    <tr><td>Phone no:</td><td><input type="text" name="phone" value="" size="50" required></td></tr>
+                    <tr><td>Email id:</td><td><input type="email" name="mailid" value="" size="50" required></td></tr>
+                    <tr><td>Gender:</td>
+                        <td>Male <input type="radio" name="gender" value="male">
+                        Female <input type="radio" name="gender" value="female"></td>
+                    </tr>
+                    <tr><td>DOB: </td><td><input type="date" name="dob" size="50" required></td></tr>
+                    <tr><td>Username: </td><td><input type="text" name="uname" value="" size="50" required></td></tr>
+                    <tr><td>Password: </td><td><input type="password" name="pwd" value="" size="50" required></td></tr>
+                    <tr><td>Age: </td><td><input type="text" name="age" value="" size="50" required></td></tr>
+                </table>
+                <input type="submit" value="Submit" name="submit"/>
+            </fieldset>
+        </form>
+    </div>
+    <!-- </center> -->
+</body>
+<div id="footer">Copyright @CMRIT_2025</div>
+</div>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        h1{
+            background-color: green;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+        a{
+            background-color:khaki;
+        }
+        button{
+            background-color: gray;
+            text-decoration: dotted;
+            font-family: cursive;
+        }
+        /* p{
+            background-color: yellow;
+        } */
+         h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px;
+            background-color: goldenrod;
+         }
+         label{
+            background-color: greenyellow;
+         }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <script src="login.js"></script>
+    <div class="main">
+        <h1>Login Form</h1>
+        <h3>Enter Your Login Details</h3>
+        <form>
+            <label for="first">Email</label>
+            <input type="text" name="first" id="email" placeholder="Enter Your Username" required>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pwd" placeholder="Enter Your Password" required>
+            <br><br>
+            <button type="submit" onclick="return LoginValidate()">Submit</button>
+        </form>
+        <p>Not Registered? <a href="register.html" style="text-decoration: none;">Create an Account</a></p>
+    </div>
+</body>
+</html>
